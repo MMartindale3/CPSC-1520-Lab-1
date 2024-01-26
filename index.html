@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="css/tailwind.css" />
 		<title>Fastify Email Service</title>
 		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="js/index.js" defer></script>
 	</head>
 
 	<body class="h-screen flex flex-col justify-center relative">
@@ -67,10 +68,11 @@
 
 		<main>
 			<!-- email dialog (modal window) -->
-			<dialog class="backdrop:bg-blue-50/50">
+			<dialog id="dialog-modal" class="backdrop:bg-blue-50/50">
 				<!-- close modal button -->
 				<nav class="flex flex-end mb-8">
 					<button
+						id="close-modal"
 						class="ml-auto focus:outline-indigo-300 focus:bg-indigo-100 m-3 border-b-2 border-indigo-400">
 						<svg
 							class="w-4 h-4 fill-indigo-600 stroke-none"
